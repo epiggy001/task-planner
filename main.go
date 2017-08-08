@@ -107,8 +107,8 @@ func add(desc string) error {
 		return err
 	}
 
-	if len(tasks) > 5 {
-		color.Red("You alread have 5 tasks. Clear them first !")
+	if len(tasks) > maxDelay {
+		color.Red("You alread have %d tasks. Clear them first !", maxDelay)
 		return nil
 	}
 
