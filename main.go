@@ -120,7 +120,11 @@ func add(desc string) error {
 		CreateTime:  time.Now(),
 	})
 
-	return writeTasks(tasks)
+	err = writeTasks(tasks)
+	if err != nil {
+		return err
+	}
+	return ls()
 }
 
 func writeTasks(tasks []*Task) error {
