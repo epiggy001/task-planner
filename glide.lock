@@ -1,0 +1,9 @@
+hash: 206eadea19db9e04227073fa4fa8282ce3bfaa704e57ed7702aadd7005ced468
+updated: 2017-08-08T20:40:55.343224383Z
+imports:
+- name: github.com/fatih/color
+  version: 570b54cabe6b8eb0bc2dfce68d964677d63b5260
+  vcs: git
+- name: github.com/satori/go.uuid
+  version: 879c5887cd475cd7864858769793b2ceb0d44feb
+testImports: []
