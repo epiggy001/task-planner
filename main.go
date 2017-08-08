@@ -38,6 +38,8 @@ func main() {
 		if len(os.Args) > 2 {
 			err = add(strings.Join(os.Args[2:], " "))
 		}
+	case "pop":
+		err = rm(0)
 	case "rm":
 		if len(os.Args) > 2 {
 			var i int
